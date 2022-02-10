@@ -41,7 +41,7 @@ const getGeolocation = () => {
       setLongitude(position.coords.longitude);
     },
     () => {
-      alert('Unable to retrieve your location');
+      alert('Unable to retrieve your location. Please enure to enable location services for your broswer.');
       setLoading(false);
     });
   } else {
