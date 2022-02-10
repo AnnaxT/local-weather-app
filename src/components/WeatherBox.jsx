@@ -4,9 +4,7 @@ import Temperature from './Temperature';
 import Loader from './Loader';
 
 const container = {
-    width: {
-        sm: '500px',
-    },
+    width: '450px',
     height: '350px',
     backgroundColor: '#1d4370',
     display: 'flex',
@@ -15,7 +13,7 @@ const container = {
     justifyContent: 'center',
     margin: 'auto',    
     opacity: '0.9',
-    '@media screen and (max-width: 414px)': {
+    '@media screen and (max-width: 450px)': {
         width:'100vw',
     },
 }

@@ -10,7 +10,14 @@ const layout = {
     alignItems: 'center',
     backgroundColor: '#8297b0',
     opacity: '0.95',
-    textAlign: 'center', 
+    textAlign: 'center',
+
+    /* ----------- mobile devices landscape mode ----------- */
+    '@media only screen and (max-device-width: 915px) and (orientation: landscape)': {
+        height: 'auto',
+        pt: 3,
+        pb: 3,
+         },
 }
 
 const videoStyles = {
@@ -21,13 +28,8 @@ const videoStyles = {
     left: '0',
     objectFit: 'cover',
     zIndex: '-1',
-    opacity:' 0.3',
+    opacity:' 0.5',
     margin: '0',
-
-    //this doesn't work - to be fixed
-    '@media screen and (maxDeviceWidth : 1024px) and (orientation: landscape)': {
-        height: 'auto'
-         }    
 }
 
 
@@ -41,7 +43,7 @@ const Layout = ({videoSrc, children}) => {
 
     return(
         <Paper sx={layout} >
-        <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()} key={videoSrc} style={videoStyles} >
+        <video autoPlay loop muted ref={videoRef} onCanPlay={() => setPlayBack()} key={videoSrc} style={videoStyles} playsInline>
                     <source src={videoSrc} type='video/mp4' />
                     <source src={videoSrc} type='video/mov' />
                     <source src={videoSrc} type='video/webm' />

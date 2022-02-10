@@ -4,9 +4,7 @@ import { Typography, Paper } from '@mui/material';
 
 const styles = {
 
-    width:  {
-        sm:  '500px',
-      },
+    width:  '450px',
     height: '130px',
     display: 'flex',
     alignItems: 'center',
@@ -14,7 +12,7 @@ const styles = {
     opacity: '0.9',
     margin: 'auto',
     backgroundColor: '#1d4370',
-    '@media screen and (max-width: 414px)': {
+    '@media screen and (max-width: 450px)': {
         width:'100vw',
     }
 }
@@ -23,7 +21,7 @@ const Header = () => {
 
     return (
         <Paper elevation={15} sx={styles}>
-             <Typography component="h1" variant="h2" sx={{fontWeight:400}} color="textPrimary">
+             <Typography component="h1" variant="h3" sx={{fontWeight:400}} color="textPrimary">
                 Weather App
             </Typography> 
         </Paper>
