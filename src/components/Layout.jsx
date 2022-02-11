@@ -38,7 +38,7 @@ const Layout = ({videoSrc, children}) => {
     const videoRef= useRef();
     // changing the playbackRate parameter
     const setPlayBack = () => {
-        videoRef.current.playbackRate = 0.3; 
+        videoRef.current.playbackRate = 0.4; 
     }
 
     return(
