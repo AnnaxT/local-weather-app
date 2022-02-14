@@ -1,6 +1,6 @@
 {
   "name": "local-weather",
-  "homepage": "https://github.com/annatyrka/local-weather-app",
+  "homepage": "https://annatyrka.github.io/local-weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
