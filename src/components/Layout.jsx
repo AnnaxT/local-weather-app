@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { Typography, Paper } from '@mui/material';
+import {  Paper } from '@mui/material';
 // import myVideo from '../assets/animations/rain.mp4';
 
 const layout = {
